@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         task1();
         task2();
+        task3();
     }
 
     public static int[] generateRandomArray() {
@@ -19,8 +20,7 @@ public class Main {
         System.out.println("Task 1.");
         int[] arr = generateRandomArray();
         int sum = 0;
-        for (int element : arr
-        ) {
+        for (int element : arr) {
             sum += element;
         }
         System.out.println(sum);
@@ -43,5 +43,17 @@ public class Main {
         }
         System.out.println("Минимальная сумма трат за день составила: " + minCost + " рублей.");
         System.out.println("Максимальная сумма трат за день составила: " + maxCost + " рублей.");
+    }
+
+    public static void task3() {
+        System.out.println("Task 3.");
+        int[] arr = generateRandomArray();
+        float sum = 0f;
+        int count = arr.length;
+        for (int element : arr) {
+            sum += element;
+        }
+        float avg = sum / count;
+        System.out.println(avg);
     }
 }

@@ -41,6 +41,7 @@ public class Main {
                 minCost = current;
             }
         }
-        System.out.println("Минимальная сумма трат за день составила: " + minCost + " рублей." + "\nМаксимальная сумма трат за день составила: " + maxCost + " рублей.");
+        System.out.println("Минимальная сумма трат за день составила: " + minCost + " рублей.");
+        System.out.println("Максимальная сумма трат за день составила: " + maxCost + " рублей.");
     }
 }

@@ -35,10 +35,7 @@ public class Main {
         for (final int current : arr) {
             if (current > maxCost) {
                 maxCost = current;
-            }
-        }
-        for (final int current : arr) {
-            if (current < minCost) {
+            } else if (current < minCost) {
                 minCost = current;
             }
         }
@@ -57,9 +54,10 @@ public class Main {
         float avg = sum / count;
         System.out.println(avg);
     }
+
     public static void task4() {
         System.out.println("Task 4.");
-        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+        char[] reverseFullName = {'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
         for (int i = reverseFullName.length - 1; i >= 0; i--) {
             System.out.print(reverseFullName[i]);
         }
